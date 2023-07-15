@@ -1053,8 +1053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DistanceFromCamera: 2.5
   PickupDistance: 5
-  Box: {fileID: 399909959508715348, guid: e4733afbda9d04a108fdbe460368c2b4, type: 3}
-  BoxMat: {fileID: 2100000, guid: 65a09a1766b40cd599a72fae72d12c8e, type: 2}
+  Box: {fileID: 8714556975251986307, guid: e4733afbda9d04a108fdbe460368c2b4, type: 3}
   UITextureSelection: {fileID: 3542010773082074469}
 --- !u!1 &7413431727109648440
 GameObject:
