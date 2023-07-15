@@ -55,7 +55,7 @@ public class BoxSpawner : MonoBehaviour
         // spawn a new box
         currentBox = Instantiate(Box, Camera.main.transform.position + Camera.main.transform.forward * DistanceFromCamera, Camera.main.transform.rotation);
         currentBox.GetComponent<BoxCollider>().enabled = false;
-        currentBox.gameObject.GetComponent<Renderer>().material.SetTexture("_MainTex", currentTexture);
+        currentBox.gameObject.GetComponent<Renderer>().material.mainTexture = currentTexture;
     }
 
     void UpdateBoxTransform()
