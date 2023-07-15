@@ -27,6 +27,7 @@ public class BoxSpawner : MonoBehaviour
         // release the box
         if (Input.GetMouseButtonUp(0))
         {
+            currentBox.GetComponent<BoxCollider>().enabled = true; // reenable collider
             currentBox = null;
         }
     }
@@ -35,6 +36,7 @@ public class BoxSpawner : MonoBehaviour
     {
         // spawn a new box
         currentBox = Instantiate(Box, Camera.main.transform.position + Camera.main.transform.forward * DistanceFromCamera, Camera.main.transform.rotation);
+        currentBox.GetComponent<BoxCollider>().enabled = false;
     }
 
     void UpdateBoxTransform()
