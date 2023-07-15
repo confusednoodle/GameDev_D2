@@ -6,6 +6,7 @@ public class DayNightHandler : MonoBehaviour
 {
     [SerializeField] Material DaySkybox;
     [SerializeField] Material NightSkybox;
+    [SerializeField] Light Sun;
 
     // Update is called once per frame
     void Update()
@@ -13,10 +14,12 @@ public class DayNightHandler : MonoBehaviour
         if (Input.GetKeyDown("e"))
         {
             RenderSettings.skybox = DaySkybox;
+            Sun.enabled = true;
         }
         if (Input.GetKeyDown("q"))
         {
             RenderSettings.skybox = NightSkybox;
+            Sun.enabled = false;
         }
     }
 }
