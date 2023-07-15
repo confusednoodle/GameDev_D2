@@ -3,6 +3,7 @@ using UnityEngine;
 public class BoxSpawner : MonoBehaviour
 {
     [SerializeField] float DistanceFromCamera = 1;
+    [SerializeField] float PickupDistance = 2.5f;
     [SerializeField] GameObject Box;
 
     GameObject currentBox = null;
@@ -12,9 +13,18 @@ public class BoxSpawner : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && currentBox == null)
         {
-            SpawnAndHoldTheBox();
+            // check if box is hit
+            RaycastHit hit;
+            if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, PickupDistance))
+            {
+                if (hit.collider.gameObject.tag == "Box")
+                {
+                    // Destroy the hit box
+                    Destroy(hit.collider.gameObject);
+                }
+            }
 
-            // TODO: check for box in direction and pick it up
+            SpawnAndHoldTheBox();
         }
 
         // always update box position if still holding it
