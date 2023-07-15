@@ -1,18 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void LoadW1()
     {
-        
+        SceneManager.LoadScene("World 1");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void LoadW2()
     {
-        
+        SceneManager.LoadScene("World 2");
+    }
+
+    public void LoadW3()
+    {
+        SceneManager.LoadScene("World 3");
     }
 }
