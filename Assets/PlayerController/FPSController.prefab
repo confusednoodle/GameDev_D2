@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8200000}
   m_Layer: 0
   m_Name: FPSController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -505,6 +505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DistanceFromCamera: 2.5
+  PickupDistance: 2.5
   Box: {fileID: 399909959508715348, guid: e4733afbda9d04a108fdbe460368c2b4, type: 3}
 --- !u!1 &7739627397415731032
 GameObject:
