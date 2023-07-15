@@ -11,6 +11,11 @@ public class UITextureSelection : MonoBehaviour
     Texture currentTexture;
     bool companionCube;
 
+    void Start()
+    {
+        currentTexture = Textures[0];
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
