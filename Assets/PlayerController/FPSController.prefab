@@ -853,6 +853,7 @@ GameObject:
   - component: {fileID: 807087658656335830}
   - component: {fileID: 5415857917675510062}
   - component: {fileID: 8711150515352141632}
+  - component: {fileID: 3542010773082074469}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -943,6 +944,31 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &3542010773082074469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4505875554100013928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d750bd657ffa5c08aa69fad99846f3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Selector: {fileID: 8914660144388631506}
+  SelectionPositions:
+  - {fileID: 4907108838001970814}
+  - {fileID: 9164655342289234545}
+  - {fileID: 7212483233974470964}
+  - {fileID: 7751486216998214202}
+  - {fileID: 538354026147230891}
+  Textures:
+  - {fileID: 2800000, guid: e57d9a28e77d5f2458b3c41150cf578c, type: 3}
+  - {fileID: 2800000, guid: 48e2b20365291794db1903ad8e0e7e71, type: 3}
+  - {fileID: 2800000, guid: 273186d566c946e40a5df7542360e176, type: 3}
+  - {fileID: 2800000, guid: df1f90d5898704c40bbf4b9e1cb8bc7e, type: 3}
+  - {fileID: 0}
 --- !u!1 &5347746837263125400
 GameObject:
   m_ObjectHideFlags: 0
