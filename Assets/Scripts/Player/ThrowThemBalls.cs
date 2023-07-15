@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// https://www.youtube.com/watch?v=OGQSFLGpiBA
 public class ThrowThemBalls : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] float Force;
+    [SerializeField] Rigidbody Ball; // :3
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        if (Input.GetMouseButtonDown(1))
+        {
+            Rigidbody BallInstance = Instantiate(Ball, transform.position, Quaternion.identity);
+            BallInstance.AddForce(Camera.main.transform.forward * Force, ForceMode.Impulse);
+        }
     }
 }

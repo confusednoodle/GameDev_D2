@@ -457,6 +457,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dabd02375746ab3409cc78a57e61ba97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Force: 25
+  Ball: {fileID: 8733108829337787844, guid: f9d095ac47e9e789b8f607f08c88aece, type: 3}
 --- !u!1 &7739627397415731032
 GameObject:
   m_ObjectHideFlags: 0
