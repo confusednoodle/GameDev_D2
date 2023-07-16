@@ -1601,6 +1601,18 @@ PrefabInstance:
       propertyPath: m_projectionMatrixMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 789705810376833497, guid: e9d1257f09cc8c845bc69088e74d6966,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d4b1d37d128891e47b11b56eabf3552e,
+        type: 3}
+    - target: {fileID: 8647964068195632260, guid: e9d1257f09cc8c845bc69088e74d6966,
+        type: 3}
+      propertyPath: Companion
+      value: 
+      objectReference: {fileID: 3938400520105384255, guid: c4209413d57bd514db360cdbfe9ae9ac,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9d1257f09cc8c845bc69088e74d6966, type: 3}
 --- !u!1 &783996214
